@@ -75,3 +75,7 @@ class DataWarehouse:
         )
         self.total_utility = sum(self.utility_values_of_mono_item.values())
     
+class Itemset:
+    def __init__(self, itemset: set, utility_values):
+        self.itemset = itemset
+        self.utility_values = utility_values
